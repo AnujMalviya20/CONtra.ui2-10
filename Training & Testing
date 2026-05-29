@@ -14,7 +14,6 @@ from sklearn.naive_bayes import GaussianNB
 # Sample Dataset
 from sklearn.datasets import load_iris
 
-# Load da
 data = load_iris()
 
 X = data.data
