@@ -67,3 +67,24 @@ for dataset_name, dataset in datasets.items():
         accuracy = accuracy_score(y_test, y_pred)
 
         print(f"{model_name:<25} Accuracy: {accuracy:.4f}")
+
+
+
+
+Data preprocessing
+Multiple model training
+Model comparison
+Cross-validation
+Hyperparameter tuning
+Feature importance
+Result exporting
+End-to-end ML pipeline
+
+
+
+
+
+
+
+
+--------------------------------------------
