@@ -101,7 +101,7 @@ for name, model in models.items():
     # Accuracy
     accuracy = accuracy_score(y_test, y_pred)
 
-    print(f"\nAccuracy Score: {accuracy:.4f}")
+    print(f"\nAccuracy 
 
     # Classification Report
     print("\nClassification Report:")
