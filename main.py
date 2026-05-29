@@ -526,7 +526,7 @@ print("\nBest CV Score:")
 print(grid.best_score_)
 
 # ---------------------------------------------------
-# FEATURE IMPORTANCE
+# 
 # ---------------------------------------------------
 
 best_rf = grid.best_estimator_
