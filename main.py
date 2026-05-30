@@ -340,7 +340,7 @@ df.fillna(df.median(numeric_only=True), inplace=True)
 TARGET_COLUMN = "target"
 
 X = df.drop(TARGET_COLUMN, axis=1)
-y = df[TARGET_COLUMN]
+y = df[TARGET_COLUM
 
 # ---------------------------------------------------
 # TRAIN TEST SPLIT
