@@ -140,7 +140,7 @@ for model_name, model in models.items():
         y_test,
         predictions,
         average="weighted"
-    )
+
 
     recall = recall_score(
         y_test,
