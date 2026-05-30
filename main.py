@@ -468,6 +468,7 @@ for model_name, model in models.items():
 
 results_df = pd.DataFrame(results)
 
+
 results_df = results_df.sort_values(
     by="Accuracy",
     ascending=False
