@@ -6,9 +6,7 @@ warnings.filterwarnings("ignore")
 from sklearn.model_selection import (
     train_test_split,
     cross_val_score,
-    GridSearchCV
-)
-
+    GridSearchC
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 
@@ -518,6 +516,14 @@ grid = GridSearchCV(
     scoring="accuracy",
     n_jobs=-1
 )
+
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+
+
+from sklearn.metrics import (
+    accuracy_score,
+    precision_score,
 
 grid.fit(X_train, y_train)
 
