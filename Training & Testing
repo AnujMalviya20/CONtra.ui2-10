@@ -16,6 +16,11 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 # Sample Datase
 from sklearn.da
+
+
+
+
+
 data = load_iris()
 X = data.data
 y = data.target
