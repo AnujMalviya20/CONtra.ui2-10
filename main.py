@@ -96,7 +96,6 @@ models = {
 
     "KNN":
         KNeighborsClassifier(),
-
     "SVM":
         SVC(),
 
