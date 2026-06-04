@@ -550,7 +550,61 @@ print(grid.best_score_)
 
 # ---------------------------------------------------
 # 
-# ---------------------------------------------------
+# ------------------
+
+omForestClassifier(),
+    param_grid,
+    cv=5,
+    scoring="accuracy",
+    n_jobs=-1
+)
+
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+
+
+from sklearn.metrics import (
+    accuracy_score,
+    precision_score,
+
+grid.fit(X_train, y_train)
+
+print("Best Parameters:")
+print(grid.best_params_)
+
+print("\nBest CV Score:")
+
+
+mport warnings
+warnings.filterwarnings("ignore")
+
+from sklearn.model_selection import (
+    train_test_split,
+    cross_val_score,
+    GridSearchC
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------
 
  92
  93
