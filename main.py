@@ -8,8 +8,7 @@ from sklearn.model_selection import (
     cross_val_score,
     GridSearchC
 from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import Pipeline
-
+from sklearn.pipeline import Pipelin
 
 
 from sklearn.metrics import (
