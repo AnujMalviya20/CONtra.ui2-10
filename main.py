@@ -552,6 +552,178 @@ print(grid.best_score_)
 # 
 # ---------------------------------------------------
 
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+import pandas as pd
+        ExtraTreesClassifier(),
+
+    "Gradient Boosting":
+        GradientBoostingClassifier(),
+
+    "KNN":
+        KNeighborsClassifier(),
+
+    "SVM":
+        SVC(),
+
+    "Naive Bayes":
+        GaussianNB()
+}
+
+# ---------------------------------------------------
+# RESULTS STORAGE
+# ---------------------------------------------------
+
+results = []
+
+# --------------------------------------------------
+# MODEL LOOP
+# --------------------------------------------------
+
+for model_name, model in models.items():
+
+    print("\n")
+    print("="*70)
+    print(f"TRAINING: {model_name}")
+    print("="*70)
+
+    pipeline = Pipeline([
+        ("scaler", StandardScaler()),
+        ("model", model)
+    ])
+
+    # Training
+    pipeline.fit(X_train, y_train)
+
+    # Prediction
+    predictions = pipeline.predict(X_test)
+
+    # Metrics
+    accuracy = accuracy_score(y_test, predictions)
+
+    precision = precision_score(
+        y_test,
+        predictions,
+        average="weighted"
+
+
+    recall = recall_score(
+        y_test,
+        predictions,
+        average="weighted"
+    )
+
+    f1 = f1_score(
+        y_test,
+        predictions,
+        average="weighted"
+    )
+
+    # Cross Validation
+    cv_scores = cross_val_score(
+        pipeline,
+        X,
+        y,
+        cv=5
+    )
+    
+
+    cv_mean = cv_scores.mean()
+
+    print(f"Accuracy : {accuracy:.4f}")
+    print(f"Precision: {precision:.4f}")
+    print(f"Recall   : {recall:.4f}")
+    print(f"F1 Score : {f1:.4f}")
+    print(f"CV Score : {cv_mean:.4f}")
+
+    print("\nClassification Report")
+    print(classification_report(y_test, predictions))
+
+    results.append({
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
 best_rf = grid.best_estimator_
 
 feature_importance = pd.DataFrame({
