@@ -546,8 +546,6 @@ from sklearn.pipeline import Pipeline
 
 
 
-
-
 print(grid.best_score_)
 
 # ---------------------------------------------------
