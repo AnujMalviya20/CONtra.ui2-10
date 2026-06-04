@@ -535,6 +535,18 @@ print(grid.best_params_)
 print("\nBest CV Score:")
 
 
+mport warnings
+warnings.filterwarnings("ignore")
+
+from sklearn.model_selection import (
+    train_test_split,
+    cross_val_score,
+    GridSearchC
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+
+
+
 
 
 print(grid.best_score_)
