@@ -10,6 +10,12 @@ from sklearn.model_selection import (
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipelin
 
+from sklearn.model_selection import (
+    train_test_split,
+    cross_val_score,
+    GridSearchC
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipelin
 
 from sklearn.metrics import (
     accuracy_score, 
