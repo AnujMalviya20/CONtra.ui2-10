@@ -25,6 +25,12 @@ from sklearn.metrics import (
     classification_report
 )
 
+from sklearn.model_selection import (
+    train_test_split,
+    cross_val_score,
+    GridSearchC
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipelin
 # Models
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
