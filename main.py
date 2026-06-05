@@ -12,7 +12,7 @@ from sklearn.pipeline import Pipelin
 
 
 from sklearn.metrics import (
-    accuracy_score,
+    accuracy_score, 
     precision_score,
     recall_score,
     f1_scor
