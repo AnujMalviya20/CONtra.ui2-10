@@ -473,6 +473,12 @@ for model_name, model in models.items():
 
 results_df = pd.DataFrame(results)
 
+from sklearn.model_selection import (
+    train_test_split,
+    cross_val_score,
+    GridSearchC
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipelin
 
 results_df = results_df.sort_values(
     by="Accuracy",
